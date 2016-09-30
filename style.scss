@@ -1,0 +1,244 @@
+$action-color:   #71bc37;
+$brand-gray:     #f7f7f7;
+$brand-primary:  #009dc8;
+$brand-success:  #5fa413;
+$brand-danger:   #d0021b;
+$screen-xs:      480px;
+$screen-sm:      720px;
+$screen-md:      992px;
+$screen-lg:      1200px;
+$text-muted:     $brand-gray;
+
+// Atomic Typography
+.content a {
+  color: $brand-primary;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+.text-primary {
+  color: $brand-primary;
+}
+.text-success {
+  color: $brand-success;
+}
+.text-danger {
+  color: $brand-danger;
+}
+.text-muted {
+  color: $brand-gray;
+}
+
+// Atomic Margin
+.mg-0 { margin: 0; }
+.mg-t-0 { margin-top: 0; }
+.mg-r-0 { margin-right: 0; }
+.mg-b-0 { margin-bottom: 0; }
+.mg-l-0 { margin-left: 0; }
+.mg-10 { margin: 10px; }
+.mg-t-10 { margin-top: 10px; }
+.mg-r-10 { margin-right: 10px; }
+.mg-b-10 { margin-bottom: 10px; }
+.mg-l-10 { margin-left: 10px; }
+.mg-20 { margin: 20px; }
+.mg-t-20 { margin-top: 20px; }
+.mg-r-20 { margin-right: 20px; }
+.mg-b-20 { margin-bottom: 20px; }
+.mg-l-20 { margin-left: 20px; }
+.mg-30 { margin: 30px; }
+.mg-t-30 { margin-top: 30px; }
+.mg-r-30 { margin-right: 30px; }
+.mg-b-30 { margin-bottom: 30px; }
+.mg-l-30 { margin-left: 30px; }
+.mg-40 { margin: 40px; }
+.mg-t-40 { margin-top: 40px; }
+.mg-r-40 { margin-right: 40px; }
+.mg-b-40 { margin-bottom: 40px; }
+.mg-l-40 { margin-left: 40px; }
+
+/* Atomic Padding */
+.pd-0 { padding: 0; }
+.pd-t-0 { padding-top: 0; }
+.pd-r-0 { padding-right: 0; }
+.pd-b-0 { padding-bottom: 0; }
+.pd-l-0 { padding-left: 0; }
+.pd-10 { padding: 10px; }
+.pd-t-10 { padding-top: 10px; }
+.pd-r-10 { padding-right: 10px; }
+.pd-b-10 { padding-bottom: 10px; }
+.pd-l-10 { padding-left: 10px; }
+.pd-20 { padding: 20px; }
+.pd-t-20 { padding-top: 20px; }
+.pd-r-20 { padding-right: 20px; }
+.pd-b-20 { padding-bottom: 20px; }
+.pd-l-20 { padding-left: 20px; }
+.pd-30 { padding: 30px; }
+.pd-t-30 { padding-top: 30px; }
+.pd-r-30 { padding-right: 30px; }
+.pd-b-30 { padding-bottom: 30px; }
+.pd-l-30 { padding-left: 30px; }
+.pd-40 { padding: 40px; }
+.pd-t-40 { padding-top: 40px; }
+.pd-r-40 { padding-right: 40px; }
+.pd-b-40 { padding-bottom: 40px; }
+.pd-l-40 { padding-left: 40px; }
+
+.button {
+  padding: 10px 20px;
+  
+  &.button-primary {
+    background-color: $brand-primary;
+    color: white;
+    border: 1px solid $brand-primary;
+  }
+}
+
+// Global
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  // font-family: 'Avenir Next', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  line-height: 1.65;
+}
+
+img {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+body,
+.body-wrap {
+	min-width: 100%; 
+	background-color: $brand-gray;
+	margin: 0; padding: 0;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust:none;
+	-ms-text-size-adjust:none;
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 14px;
+}
+
+a {
+  color: $action-color;
+  text-decoration: none;
+}
+
+// Button
+.button {
+  display: inline-block;
+  color: white;
+  background: $action-color;
+  border: solid $action-color;
+  border-width: 10px 20px 8px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+// Typography
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 20px;
+  line-height: 1.25;
+}
+h1 {
+  font-size: 32px;
+}
+h2 {
+  font-size: 28px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 20px;
+}
+h5 {
+  font-size: 16px;
+}
+
+p, ul, ol {
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+// Layout Style
+table { 
+	border-collapse: collapse !important; 
+	mso-table-lspace: 0pt;
+	mso-table-rspace: 0pt;
+}
+
+.wrapper {
+	background: white;
+	width: 100%;
+	
+	@media(min-width: $screen-xs) {
+		width: 80%;
+	}
+	
+	@media(min-width: $screen-sm) {
+		width: 90%;
+	}
+}
+
+.mail-header,
+.mail-footer {
+	.wrapper {
+		background: none;
+	}
+}
+
+.mail-header {	
+	img {
+		width: 250px;
+	}
+}
+
+.mail-footer {
+	color: darken($brand-gray, 50%);
+	
+	.wrapper {
+		.container {
+			text-align: center;
+		}
+	}
+}
+
+.col {
+	display: block;
+	vertical-align: top;
+	
+	@media(min-width: $screen-xs) {
+		display: inline-table;
+	}
+}
+.col2 {
+	width: 100%;
+	
+	@media(min-width: $screen-xs) {
+		width: 50%;
+	}
+}
+.col3 {
+	width: 100%;
+	
+	@media(min-width: $screen-xs) {
+		width: 33.33%;
+	}
+}
+.col12 {
+	width: 100%;
+	display: block;
+}
+
+@-ms-viewport{ 
+	width: device-width; 
+}
