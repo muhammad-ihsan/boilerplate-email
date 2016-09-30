@@ -1,97 +1,60 @@
-<!-- <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> -->
-<html>
-<head>
-
-    <title>Email Layout</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <!--[if !mso]><!-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!--<![endif]-->
-    
-    <!-- Google Web Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
-    
-    <style type="text/css">
-
-    </style>
-    
-    <!--[if gte mso 15]>
-    <style type="text/css">
-        table { font-size:1px; line-height:0; mso-margin-top-alt:1px;mso-line-height-rule: exactly; }
-        * { mso-line-height-rule: exactly; }
-    </style>
-    <![endif]-->    
-
-</head>
-<body marginwidth="0" marginheight="0" leftmargin="0" topmargin="0" yahoo="fix">    
-    
+<body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0">
     <!-- Mail Header -->
-    <table width="100%" cellpadding="0" cellspacing="0" border="0" class="mail-header mg-t-40 mg-b-20">
+    <table class="head-wrap">
         <tr>
-            <td width="100%" valign="top" align="center">
-                 <!-- Start Wrapper  -->
-                <table cellpadding="0" cellspacing="0" border="0" class="wrapper">
-                    <tr>
-						<td class="col12">
-							<a href="#">
-								<img src="http://marthatilaarshop.com/themes/marthatilaar/assets/images/logo.png" alt="" />
-							</a>
-						</td>       
-                    </tr>
-                </table>                    
+            <td class="header container">
+                <div class="content">
+                    <table>
+                        <tr>
+                            <td align="center">
+                                <a href="#">
+                                    <img src="http://placehold.it/150x150/" />
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </td>
         </tr>
     </table>
-    
-    <!-- Mail Content-->
-    <table width="100%" cellpadding="0" cellspacing="0" border="0" class="mail-content">
-        <tr>
-            <td width="100%" valign="top" align="center">
-				
-			<table cellpadding="0" cellspacing="0" border="0" class="wrapper">
-				<tr>
-					<td class="col col12">
-						<img src="http://unsplash.it/1280/300" alt="" />
-					</td>
-				</tr>
-				
-				<tr>
-					<td class="col col2">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit nulla alias minima porro ut commodi obcaecati velit, minus dicta soluta aperiam provident illo architecto incidunt non maxime, ad earum! Nemo.</p>
-					</td>
-					<td class="col col2">
-						<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo totam nostrum provident explicabo, nam sunt odio rerum nobis recusandae, placeat nihil distinctio accusantium aspernatur laborum assumenda nulla itaque voluptatum, asperiores.
-						</p>
-					</td>
-				</tr>
-			</table>
 
-			</td>
-		</tr>
-    </table>
-    
-    <!-- Mail Footer -->
-    <table width="100%" cellpadding="0" cellspacing="0" border="0" class="mail-footer mg-t-10">
+    <!--  Mail Body -->
+    <table class="body-wrap">
         <tr>
-			<td width="100%" valign="top" align="center">
-                 <table cellpadding="0" cellspacing="0" border="0" class="wrapper">
-                    <tr>
-                        <td class="col12">
-							<p class="text-center mg-b-0">
-								tel: <a href="#">(021) 123456789</a> or email: <a href="#">hallo@bandung.com</a>
-							</p>
-							<p class="text-center">
-								PT. Duta Digital Nusantara <br />
-								Kemayoran, Jakarta <br />
-								Indonesia
-							</p>
-						</td>
-                    </tr>
-                </table>
+            <td class="container" bgcolor="#FFFFFF">
+                <div class="content">
+                    <table>
+                        <tr>
+                            <td>
+                                {{ content|raw }}
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Mail Footer -->
+    <table class="footer-wrap">
+        <tr>
+            <td class="container">
+                <!-- content -->
+                <div class="content">
+                    <table>
+                        <tr>
+                            <td align="center">
+                                <p>
+                                    Phone: <a href="#">tel: (021) 123456789</a> or Email: <a href="#">hello@bandung.com</a> <br />
+                                    PT. Duta Digital Nusantara <br />
+                                    Kemayoran, Jakarta Pusat <br />
+                                    Indonesia
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </div><!-- /content -->
             </td>
         </tr>
     </table>
 </body>
-</html>
