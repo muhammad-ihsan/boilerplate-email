@@ -10,7 +10,7 @@
   background: #d0021b;
 }
 .alert.alert-success {
-  background: #009dc8;
+  background: #5fa413;
 }
 
 .btn {
@@ -57,7 +57,7 @@
 }
 
 .text-muted {
-  color: #f7f7f7;
+  color: #787878;
 }
 
 .mg-0 {
@@ -361,6 +361,29 @@ body {
 .clear {
   display: block;
   clear: both;
+}
+
+.table.table-border {
+  border-collapse: collapse;
+}
+.table.table-border tr:first-child td {
+  border-top: 1px solid black;
+}
+.table.table-border tr td,
+.table.table-border tr th {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+.table.table-border tr th {
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+}
+.table.table-border tfoot tr td {
+  color: #787878;
+}
+.table.table-border tfoot tr th:first-child {
+  text-align: left;
 }
 
 @media only screen and (max-width: 600px) {

@@ -1,5 +1,5 @@
 $action-color: 	#71bc37;
-$brand-gray: 	#f7f7f7;
+$brand-gray: 	  #f7f7f7;
 $brand-primary: #009dc8;
 $brand-success: #5fa413;
 $brand-danger: 	#d0021b;
@@ -24,7 +24,7 @@ $text-muted: 	$brand-gray;
 	}
 	
 	&.alert-success {
-		background: $brand-primary;
+		background: $brand-success;
 	}
 }
 
@@ -68,7 +68,7 @@ $text-muted: 	$brand-gray;
 	color: $brand-danger;
 }
 .text-muted {
-	color: $brand-gray;
+	color: darken($brand-gray, 50%);
 }
 
 // Atomic Margin
@@ -329,6 +329,38 @@ body {
 .clear { 
 	display: block; 
 	clear: both; 
+}
+
+.table {
+  &.table-border {
+    border-collapse: collapse;
+    
+    tr:first-child td {
+      border-top: 1px solid black;
+    }
+    
+    tr td,
+    tr th {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid black;
+    }
+    
+    tr th {
+      border-bottom: 2px solid black;
+      border-top: 2px solid black;
+    }
+    
+    tfoot {
+      tr td {
+        color: darken($brand-gray, 50%);
+      }
+      
+      tr th:first-child {
+        text-align: left;
+      }
+    }
+  }
 }
 
 // Phone Media Queries
