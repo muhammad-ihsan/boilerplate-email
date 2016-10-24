@@ -1,5 +1,5 @@
 $action-color: 	#71bc37;
-$brand-gray: 	  #f7f7f7;
+$brand-gray: 	#f7f7f7;
 $brand-primary: #009dc8;
 $brand-success: #5fa413;
 $brand-danger: 	#d0021b;
@@ -310,7 +310,8 @@ body {
 	width: 100%; 
 }
 .column {
-	width: 300px;
+	// width: 300px;
+	width: 280px;
 	float:left;
 	
 	table {

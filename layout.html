@@ -1,60 +1,72 @@
-<body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0">
-    <!-- Mail Header -->
-    <table class="head-wrap">
-        <tr>
-            <td class="header container">
-                <div class="content">
-                    <table>
-                        <tr>
-                            <td align="center">
-                                <a href="#">
-                                    <img src="http://placehold.it/150x150/" />
-                                </a>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            </td>
-        </tr>
-    </table>
+<html>
+    <head>
+        <style media="screen" type="text/css">
+            {{ css|raw }}
+        </style>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- So that mobile will display zoomed in -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- enable media queries for windows phone 8 -->
+        <meta name="format-detection" content="telephone=no"> <!-- disable auto telephone linking in iOS -->
+    </head>
 
-    <!--  Mail Body -->
-    <table class="body-wrap">
-        <tr>
-            <td class="container" bgcolor="#FFFFFF">
-                <div class="content">
-                    <table>
-                        <tr>
-                            <td>
-                                {{ content|raw }}
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            </td>
-        </tr>
-    </table>
+    <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0">
+        <!-- Mail Header -->
+        <table class="head-wrap">
+            <tr>
+                <td class="header container">
+                    <div class="content">
+                        <table>
+                            <tr>
+                                <td align="center">
+                                    <a href="#">
+                                        <img src="http://placehold.it/150x150/" />
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </table>
 
-    <!-- Mail Footer -->
-    <table class="footer-wrap">
-        <tr>
-            <td class="container">
-                <!-- content -->
-                <div class="content">
-                    <table>
-                        <tr>
-                            <td align="center">
-                                <p>
-                                    Phone: <a href="#">tel: (021) 123456789</a> or Email: <a href="#">hello@bandung.com</a> <br />
-                                    PT. Duta Digital Nusantara <br />
-                                    Kemayoran, Jakarta Pusat <br />
-                                    Indonesia
-                                </p>
-                            </td>
-                        </tr>
-                    </table>
-                </div><!-- /content -->
-            </td>
-        </tr>
-    </table>
-</body>
+        <!--  Mail Body -->
+        <table class="body-wrap">
+            <tr>
+                <td class="container" bgcolor="#FFFFFF">
+                    <div class="content">
+                        <table>
+                            <tr>
+                                <td>
+                                    {{ content|raw }}
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Mail Footer -->
+        <table class="footer-wrap">
+            <tr>
+                <td class="container">
+                    <!-- content -->
+                    <div class="content">
+                        <table>
+                            <tr>
+                                <td align="center">
+                                    <p>
+                                        Phone: <a href="#">tel: (021) 123456789</a> or Email: <a href="#">hello@bandung.com</a> <br />
+                                        PT. Duta Digital Nusantara <br />
+                                        Kemayoran, Jakarta Pusat <br />
+                                        Indonesia
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div><!-- /content -->
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
